@@ -1,8 +1,18 @@
-$primary: #fbfbfb;
-$secondary: #4f5b66;
-$highlight: #f51212;
-$dark: #343d46;
-$light: #c0c5ce;
+@import "colors";
 
-// space-gray like Color Palette https://www.color-hex.com/color-palette/2280
-// Website Hand-Drawn Images https://www.color-hex.com/color-palette/42098
+$primary: #fbfbfb;
+$secondary: #4f5b66; // grayish
+$highlight: #e71d36;
+$dark: #343d46;
+$light: #e1e1e1;
+
+$link: lighten(#4f5b66, 20%);
+$activeLink: #4f5b66;
+
+$classicBlue: #0f4c81;
+$info: #2ec4b6;
+$success: #3bae6b;
+$warning: #ff9f1c;
+
+$serif: "Roboto Condensed", serif;
+$sans-serif: "Lato", sans-serif;

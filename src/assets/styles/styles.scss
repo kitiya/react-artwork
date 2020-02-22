@@ -1,9 +1,20 @@
 @import "reset.scss";
 @import "config.scss";
 
+/* The Box Model Fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: $primary;
-  font-family: "Lato", sans-serif;
+  font-family: $sans-serif;
 }
 
 h1,
@@ -12,5 +23,29 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Condensed", serif;
+  font-family: $serif;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.75;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+header {
+  font-family: $serif;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
 }

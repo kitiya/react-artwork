@@ -1,0 +1,51 @@
+@import "../../app";
+
+.collection-item {
+  // width: 22%; //TODO
+  width: 350px;
+  height: 350px;
+  margin: 10px auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid $light;
+
+  .image {
+    // margin: 10px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .collection-footer {
+    margin: 20px 0;
+    align-self: start;
+    width: 100%;
+
+    .name {
+      color: $highlight;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+
+      .artist {
+        font-size: 1rem;
+        color: $secondary;
+      }
+      .price {
+        font-size: 1rem;
+        text-align: end;
+      }
+    }
+  }
+}
