@@ -5,29 +5,50 @@
   height: 7vh;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
+  padding: 0 80px;
   position: absolute;
-  padding: 0;
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
-  a {
-    padding: 10px;
-    margin: 10px;
-    font-size: 24px;
-    color: $link;
-    text-transform: uppercase;
+  .logo-container {
+    height: 100%;
+    width: 75px;
+    position: relative;
 
-    &:hover {
-      color: $activeLink;
-    }
-
-    &:active {
-      color: $activeLink;
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
-  .active-link {
-    color: $activeLink;
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .option {
+      font-size: 20px;
+      font-weight: 300;
+      color: $link;
+      text-transform: uppercase;
+      margin: 0 20px;
+
+      &:hover {
+        color: $activeLink;
+      }
+
+      &:active {
+        color: $activeLink;
+      }
+    }
+    .active-link {
+      color: $info !important;
+      border-bottom: 2px solid $info;
+    }
   }
 }

@@ -6,8 +6,8 @@ $highlight: #e71d36;
 $dark: #343d46;
 $light: #e1e1e1;
 
-$link: lighten(#e1e1e1, 20%);
-$activeLink: #e1e1e1;
+$link: $light;
+$activeLink: #2ec4b6;
 
 $classicBlue: #0f4c81;
 $info: #2ec4b6;

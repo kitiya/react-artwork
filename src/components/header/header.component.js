@@ -1,23 +1,29 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
+import { ReactComponent as Logo } from "../../assets/logo/crown.svg";
 import "./header.styles.scss";
 
 const Header = () => {
   return (
     <header className="header">
-      <NavLink activeClassName="active-link" exact to="/">
-        Home
-      </NavLink>
-      <NavLink activeClassName="active-link" to="/shop">
-        Shop
-      </NavLink>
-      <NavLink activeClassName="active-link" to="/cart">
-        Cart
-      </NavLink>
-      <NavLink activeClassName="active-link" to="/contact">
-        Contact
-      </NavLink>
+      <Link className="logo-container" to="/">
+        <Logo className="logo" />
+      </Link>
+      <div className="options">
+        <NavLink className="option" activeClassName="active-link" exact to="/">
+          Home
+        </NavLink>
+        <NavLink className="option" activeClassName="active-link" to="/shop">
+          Shop
+        </NavLink>
+        <NavLink className="option" activeClassName="active-link" to="/about">
+          About
+        </NavLink>
+        <NavLink className="option" activeClassName="active-link" to="/contact">
+          Contact
+        </NavLink>
+      </div>
     </header>
   );
 };
