@@ -1,0 +1,20 @@
+@import "../../app";
+
+.custom-buton {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  // line-height: 50px;
+  padding: 0 35px;
+  font-size: 15px;
+  background-color: $dark;
+  color: $light;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover {
+    background-color: white;
+    color: $dark;
+    border: 1px solid lighten($dark, 20%);
+  }
+}

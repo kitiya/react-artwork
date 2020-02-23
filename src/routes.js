@@ -1,10 +1,12 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Header from "./components/header/header.component";
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import AboutPage from "./pages/about/about.component";
 import ContactPage from "./pages/contact/contact.component";
+import Login from "./pages/login/login.component";
+
+import Header from "./components/header/header.component";
 
 const Routes = () => (
   <BrowserRouter>
@@ -12,8 +14,9 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route exact path="/shop" component={ShopPage} />
-      <Route exact path="/about" component={AboutPage} />
-      <Route exact path="/contact" component={ContactPage} />
+      <Route path="/about" component={AboutPage} />
+      <Route path="/contact" component={ContactPage} />
+      <Route path="/login" component={Login} />
       <Route
         component={() => {
           return (

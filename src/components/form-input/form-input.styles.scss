@@ -1,0 +1,51 @@
+@import "../../app";
+
+$sub-color: lighten($dark, 30%);
+$main-color: $dark;
+
+@mixin shrinkLabel {
+  top: -20px;
+  font-size: 12px;
+  color: $main-color;
+}
+
+.form-group {
+  position: relative;
+  margin: 45px 0;
+  background-color: white;
+
+  .form-input {
+    display: block;
+    margin: 25px 0;
+    padding: 10px 5px;
+    width: 100%;
+    font-size: 18px;
+    color: $sub-color;
+    background: none;
+    border: none;
+    border-bottom: 1px solid $sub-color;
+
+    &:focus ~ .form-input-label {
+      @include shrinkLabel();
+    }
+  }
+
+  input[type="password"] {
+    letter-spacing: 0.3em;
+  }
+
+  .form-input-label {
+    color: $sub-color;
+    font-size: 16x;
+    font-weight: lighter;
+    position: absolute;
+    pointer-events: none;
+    left: 4px;
+    top: 10px;
+    transition: all 0.5ms ease;
+
+    &.shrink {
+      @include shrinkLabel();
+    }
+  }
+}

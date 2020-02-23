@@ -23,6 +23,9 @@ const Header = () => {
         <NavLink className="option" activeClassName="active-link" to="/contact">
           Contact
         </NavLink>
+        <NavLink className="option" activeClassName="active-link" to="/login">
+          Login
+        </NavLink>
       </div>
     </header>
   );
