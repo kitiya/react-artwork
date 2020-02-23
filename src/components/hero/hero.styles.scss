@@ -1,0 +1,108 @@
+@import "../../app";
+
+.hero {
+  height: 50vh;
+  width: 100%;
+
+  box-shadow: 0 1px 5px $secondary;
+  overflow: hidden;
+
+  .background-image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url(/images/home/gallery.jpg);
+    background-position: center;
+    background-size: cover;
+
+    // &:hover {
+    // transform: scale(1.1);
+    // transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    // }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      height: 50vh;
+      text-align: center;
+      padding: 30px;
+      backface-visibility: hidden;
+
+      .primary-header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        color: darken($dark, 20%);
+
+        .title {
+          margin-bottom: 20px;
+          font-size: 48px;
+          text-transform: uppercase;
+          letter-spacing: 10px;
+          line-height: 1.2;
+          text-shadow: 1px 1px $light;
+          @include animation("move-in-top 1s ease-out");
+
+          .highlight {
+            color: $highlight;
+            text-shadow: 2px 2px $dark;
+          }
+        }
+
+        .subtitle {
+          font-family: $sans-serif;
+          font-size: 24px;
+          line-height: 1.2;
+          text-shadow: 1px 1px $light;
+          @include animation("move-in-bottom 1s ease-out");
+        }
+      }
+
+      .btn {
+        padding: 5px 20px;
+        color: white;
+        background-color: $highlight;
+        opacity: 0.8;
+        font-size: 20px;
+        transition: all 0.2s ease-out;
+        position: relative;
+
+        @include animation("fade-in-80 2s ease 1s");
+        animation-fill-mode: backwards;
+
+        &:hover {
+          background-color: darken($highlight, 10%);
+        }
+
+        &:active {
+          background-color: $highlight;
+          transform: translateY(1px);
+        }
+
+        // psudo element
+        &::after {
+          content: "";
+          display: inline-block;
+          height: 100%; // 100% of the .btn class
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background-color: $highlight;
+          transition: all 0.4s ease-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1.2) scaleY(1.5);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

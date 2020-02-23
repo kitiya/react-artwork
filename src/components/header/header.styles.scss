@@ -1,8 +1,11 @@
 @import "../../app";
 
 .header {
+  z-index: 99;
   height: 7vh;
-  background-color: darken($primary, 5%);
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  position: absolute;
   padding: 0;
   margin: 0 auto;
   display: flex;

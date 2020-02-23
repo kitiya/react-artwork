@@ -15,6 +15,10 @@ html {
 body {
   background-color: $primary;
   font-family: $sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $dark;
 }
 
 h1,
@@ -48,4 +52,5 @@ header {
 a {
   color: $link;
   text-decoration: none;
+  cursor: pointer;
 }

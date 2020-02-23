@@ -1,6 +1,8 @@
 import React from "react";
 
 import CollectionPreview from "../../components/collection-preview/collection-preview.component";
+import Hero from "../../components/hero/hero.component";
+
 import { SHOP_DATA } from "./shop.data";
 
 const ShopPage = () => {
@@ -9,6 +11,7 @@ const ShopPage = () => {
   console.log(collections);
   return (
     <div>
+      <Hero />
       {collections.map(collection => (
         <CollectionPreview
           key={collection.id}

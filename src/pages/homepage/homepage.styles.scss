@@ -10,3 +10,19 @@ button {
   background-color: $highlight;
   color: white;
 }
+
+.makeup-girl {
+  height: 20vh;
+  width: 400px;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.15)
+    ),
+    url(/images/home/makeup-girl.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 1px 5px $secondary;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
