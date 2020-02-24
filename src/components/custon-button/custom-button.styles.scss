@@ -1,11 +1,11 @@
 @import "../../app";
 
 .custom-buton {
-  min-width: 165px;
+  min-width: 150px;
   width: auto;
-  height: 50px;
-  // line-height: 50px;
-  padding: 0 35px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 30px;
   font-size: 15px;
   background-color: $dark;
   color: $light;

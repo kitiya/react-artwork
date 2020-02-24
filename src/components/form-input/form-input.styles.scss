@@ -12,7 +12,7 @@ $main-color: $dark;
 .form-group {
   position: relative;
   margin: 45px 0;
-  background-color: white;
+  background-color: darken($primary, 5%);
 
   .form-input {
     display: block;
