@@ -35,6 +35,7 @@
       color: $link;
       text-transform: uppercase;
       margin: 0 20px;
+      cursor: pointer;
 
       &:hover {
         color: $activeLink;

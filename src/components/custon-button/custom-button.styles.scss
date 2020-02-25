@@ -1,5 +1,7 @@
 @import "../../app";
 
+$google-color: #4285f4;
+
 .custom-buton {
   min-width: 150px;
   width: auto;
@@ -7,6 +9,7 @@
   line-height: 45px;
   padding: 0 30px;
   font-size: 15px;
+  font-family: $serif;
   background-color: $dark;
   color: $light;
   text-transform: uppercase;
@@ -16,5 +19,15 @@
     background-color: white;
     color: $dark;
     border: 1px solid lighten($dark, 20%);
+  }
+
+  &.google-sign-in {
+    background-color: $google-color;
+    color: white;
+
+    &:hover {
+      background-color: darken($google-color, 5%);
+      border: none;
+    }
   }
 }
