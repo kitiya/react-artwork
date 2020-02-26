@@ -7,7 +7,7 @@ import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import AboutPage from "./pages/about/about.component";
 import ContactPage from "./pages/contact/contact.component";
-import Login from "./pages/login/login.component";
+import Login from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 
 import Header from "./components/header/header.component";
 
