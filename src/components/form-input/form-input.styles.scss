@@ -4,7 +4,7 @@ $sub-color: lighten($dark, 30%);
 $main-color: $dark;
 
 @mixin shrinkLabel {
-  top: -20px;
+  top: -16px;
   font-size: 12px;
   color: $main-color;
 }
@@ -12,7 +12,6 @@ $main-color: $dark;
 .form-group {
   position: relative;
   margin: 45px 0;
-  background-color: darken($primary, 5%);
 
   .form-input {
     display: block;

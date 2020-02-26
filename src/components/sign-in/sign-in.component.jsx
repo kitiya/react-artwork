@@ -26,7 +26,10 @@ const SignIn = () => {
   };
   return (
     <div className="sign-in">
-      <h1 className="title">Sign in</h1>
+      <h2 className="title">
+        Already have an account?
+        <span className="subtitle">Sign in with your email and password</span>
+      </h2>
 
       <form onSubmit={handleSubmit}>
         <FormInput
