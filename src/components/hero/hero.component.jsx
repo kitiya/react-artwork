@@ -2,8 +2,8 @@ import React from "react";
 import "./hero.styles.scss";
 import { Link } from "react-router-dom";
 
-const Hero = () => (
-  <div className="hero">
+const Hero = ({ className }) => (
+  <div className={`hero ${className}`}>
     <div className="background-image">
       <div className="content">
         <h1 className="primary-header">

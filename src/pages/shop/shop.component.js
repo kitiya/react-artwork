@@ -11,7 +11,7 @@ const ShopPage = () => {
   console.log(collections);
   return (
     <div>
-      <Hero />
+      <Hero className="shop" />
       {collections.map(collection => (
         <CollectionPreview
           key={collection.id}
