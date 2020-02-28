@@ -1,14 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Routes from "./routes";
+import { connect } from "react-redux";
+
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import { setCurrentUser } from "./redux/user/user.actions";
 
 import Header from "./components/header/header.component";
 
-function App() {
-  const [currentUser, setCurrentUser] = useState(null);
+class App extends React.Component {
+  unsubscribeFromAuth = null;
 
-  useEffect(() => {
-    const unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+  componentDidMount() {
+    const { setCurrentUser } = this.props;
+
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
 
@@ -18,20 +23,27 @@ function App() {
             ...snapShot.data()
           });
         });
-      } else {
-        setCurrentUser(userAuth);
       }
+      setCurrentUser(userAuth);
     });
+  }
 
-    return () => unsubscribeFromAuth;
-  }, []);
+  componentWillUnmount() {
+    this.unsubscribeFromAuth();
+  }
 
-  return (
-    <>
-      <Header currentUser={currentUser} />
-      <Routes currentUser={currentUser} />
-    </>
-  );
+  render() {
+    return (
+      <>
+        <Header />
+        <Routes />
+      </>
+    );
+  }
 }
 
-export default App;
+const mapDispatchToProps = dispatch => ({
+  setCurrentUser: user => dispatch(setCurrentUser(user))
+});
+
+export default connect(null, mapDispatchToProps)(App);

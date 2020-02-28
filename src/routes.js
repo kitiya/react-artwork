@@ -7,7 +7,7 @@ import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import AboutPage from "./pages/about/about.component";
 import ContactPage from "./pages/contact/contact.component";
-import Login from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
+import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 
 const Routes = ({ currentUser }) => (
   <Switch>
@@ -15,7 +15,7 @@ const Routes = ({ currentUser }) => (
     <Route exact path="/shop" component={ShopPage} />
     <Route path="/about" component={AboutPage} />
     <Route path="/contact" component={ContactPage} />
-    <Route path="/login" component={Login} />
+    <Route path="/sign-in" component={SignInAndSignUpPage} />
     <Route
       component={() => {
         return (
