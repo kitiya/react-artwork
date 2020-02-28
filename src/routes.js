@@ -1,7 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-
-// import { auth } from "./firebase/firebase.utils";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
@@ -15,7 +13,13 @@ const Routes = ({ currentUser }) => (
     <Route exact path="/shop" component={ShopPage} />
     <Route path="/about" component={AboutPage} />
     <Route path="/contact" component={ContactPage} />
-    <Route path="/sign-in" component={SignInAndSignUpPage} />
+    <Route
+      exact
+      path="/sign-in"
+      render={() =>
+        currentUser ? <Redirect to="/" /> : <SignInAndSignUpPage />
+      }
+    />
     <Route
       component={() => {
         return (

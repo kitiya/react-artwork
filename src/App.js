@@ -36,14 +36,17 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <Routes />
+        <Routes currentUser={this.props.currentUser} />
       </>
     );
   }
 }
+const mapStateToProp = ({ user }) => ({
+  currentUser: user.currentUser
+});
 
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProp, mapDispatchToProps)(App);
