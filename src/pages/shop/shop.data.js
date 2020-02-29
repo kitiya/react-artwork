@@ -7,7 +7,7 @@ export const SHOP_DATA = [
     routeName: "paintngs",
     items: [
       {
-        id: 1,
+        id: 1001,
         name: "Souffle éternel",
         artist: "Kiko",
         year: "2020",
@@ -16,7 +16,7 @@ export const SHOP_DATA = [
         price: 2953
       },
       {
-        id: 2,
+        id: 1002,
         name: "Girafe",
         artist: "Martin",
         year: "2017",
@@ -25,7 +25,7 @@ export const SHOP_DATA = [
         price: 1808
       },
       {
-        id: 3,
+        id: 1003,
         name: "Robots Fiesta",
         artist: "David Cumps",
         year: "2020",
@@ -34,7 +34,7 @@ export const SHOP_DATA = [
         price: 3277
       },
       {
-        id: 4,
+        id: 1004,
         name: "L'arbre Amoureux",
         artist: "Alexandra Battezzati",
         year: "2019",
@@ -43,7 +43,7 @@ export const SHOP_DATA = [
         price: 4407
       },
       {
-        id: 5,
+        id: 1005,
         name: "Identité Huile XL",
         artist: "Caroline Vis",
         year: "2020",
@@ -52,7 +52,7 @@ export const SHOP_DATA = [
         price: 2712
       },
       {
-        id: 6,
+        id: 1006,
         name: "Roule ma poule",
         artist: "Patricia Simsa",
         year: "2020",
@@ -61,7 +61,7 @@ export const SHOP_DATA = [
         price: 1695
       },
       {
-        id: 7,
+        id: 1007,
         name: "Elephants",
         artist: "Rafal Gadowski",
         year: "2020",
@@ -70,7 +70,7 @@ export const SHOP_DATA = [
         price: 1582
       },
       {
-        id: 8,
+        id: 1008,
         name: "Tan Tan Bo Silkscreen",
         artist: "Takashi Murakami",
         year: "2016",
@@ -79,7 +79,7 @@ export const SHOP_DATA = [
         price: 26315
       },
       {
-        id: 9,
+        id: 1009,
         name: "Universal Religion Chapter 6",
         artist: "Joseph Klibansky",
         year: "2012",
@@ -88,7 +88,7 @@ export const SHOP_DATA = [
         price: 24850
       },
       {
-        id: 10,
+        id: 1010,
         name: "La Fosse",
         artist: "Michaël Brack",
         year: "2019",
@@ -97,7 +97,7 @@ export const SHOP_DATA = [
         price: 904
       },
       {
-        id: 11,
+        id: 1011,
         name: "L'Arbre sous les étoiles",
         artist: "Alexandra Battezzati",
         year: "2018",
@@ -106,7 +106,7 @@ export const SHOP_DATA = [
         price: 6214
       },
       {
-        id: 12,
+        id: 1012,
         name: "Dancing flower",
         artist: "Polar Bear",
         year: "2019",
@@ -123,7 +123,7 @@ export const SHOP_DATA = [
     routeName: "photography",
     items: [
       {
-        id: 1,
+        id: 2001,
         name: "S'amouracher",
         artist: "Léa Helft",
         year: "2019",
@@ -132,7 +132,7 @@ export const SHOP_DATA = [
         price: 1022
       },
       {
-        id: 2,
+        id: 2002,
         name: "girls-in-the-window",
         artist: "Ormond Gigli",
         year: "1960",
@@ -141,7 +141,7 @@ export const SHOP_DATA = [
         price: 28000
       },
       {
-        id: 3,
+        id: 2003,
         name: "Tahiti",
         artist: "Seth",
         year: "2015",
@@ -150,7 +150,7 @@ export const SHOP_DATA = [
         price: 1590
       },
       {
-        id: 4,
+        id: 2004,
         name: "Louis Vuitton",
         artist: "Giuliano Bekor",
         year: "2018",
@@ -159,7 +159,7 @@ export const SHOP_DATA = [
         price: 23000
       },
       {
-        id: 5,
+        id: 2005,
         name: "Full Green",
         artist: "Phil Skolle",
         year: "2014",
@@ -168,7 +168,7 @@ export const SHOP_DATA = [
         price: 1363
       },
       {
-        id: 6,
+        id: 2006,
         name: "Laetitia Casta",
         artist: "Ange Leccia",
         year: "2006",
@@ -177,7 +177,7 @@ export const SHOP_DATA = [
         price: 27260
       },
       {
-        id: 7,
+        id: 2007,
         name: "De Money (Rope)",
         artist: "George Osodi",
         year: "2009",
@@ -186,7 +186,7 @@ export const SHOP_DATA = [
         price: 21537
       },
       {
-        id: 8,
+        id: 2008,
         name: "Holy Day (Italy - Tuscany)",
         artist: "Antoine Rose",
         year: "2017",
@@ -195,7 +195,7 @@ export const SHOP_DATA = [
         price: 20445
       },
       {
-        id: 9,
+        id: 2009,
         name: "Marilyn Pink Roses",
         artist: "Bert Stern",
         year: "2011",
@@ -204,7 +204,7 @@ export const SHOP_DATA = [
         price: 31803
       },
       {
-        id: 10,
+        id: 2010,
         name: "Mexican Wrestling Masks",
         artist: "Liu Bolin",
         year: "2015",
@@ -213,7 +213,7 @@ export const SHOP_DATA = [
         price: 21380
       },
       {
-        id: 11,
+        id: 2011,
         name: "Vertical horizon",
         artist: "Ralph Gibson",
         year: "2016",
@@ -222,7 +222,7 @@ export const SHOP_DATA = [
         price: 17037
       },
       {
-        id: 12,
+        id: 2012,
         name: "Bubbles in Bubbles",
         artist: "Ellen von Unwerth",
         year: "2012",
@@ -239,7 +239,7 @@ export const SHOP_DATA = [
     routeName: "drawings",
     items: [
       {
-        id: 1,
+        id: 3001,
         name: "Les vaches",
         artist: "Jean Dubuffet",
         year: "1954",
@@ -248,7 +248,7 @@ export const SHOP_DATA = [
         price: 51112
       },
       {
-        id: 2,
+        id: 3002,
         name: "Six Geishas",
         artist: "Walasse Ting",
         year: "1981",
@@ -257,7 +257,7 @@ export const SHOP_DATA = [
         price: 30000
       },
       {
-        id: 3,
+        id: 3003,
         name: "Grande vanité aux papillons",
         artist: "Philippe Pasqua",
         year: "2010",
@@ -266,7 +266,7 @@ export const SHOP_DATA = [
         price: 28282
       },
       {
-        id: 4,
+        id: 3004,
         name: "Polen de anillos amarillos",
         artist: "Los Carpinteros",
         year: "2017",
@@ -283,7 +283,7 @@ export const SHOP_DATA = [
     routeName: "sculpture",
     items: [
       {
-        id: 1,
+        id: 4001,
         name: "Love",
         artist: "Kongo",
         year: "2019",
@@ -292,7 +292,7 @@ export const SHOP_DATA = [
         price: 136300
       },
       {
-        id: 2,
+        id: 4002,
         name: "Juliet - Lifesize",
         artist: "Tom Merrifield",
         year: "2013",
@@ -301,7 +301,7 @@ export const SHOP_DATA = [
         price: 130000
       },
       {
-        id: 3,
+        id: 4003,
         name: "Olivier",
         artist: "Philippe Pasqua",
         year: "2016",
@@ -310,7 +310,7 @@ export const SHOP_DATA = [
         price: 121150
       },
       {
-        id: 4,
+        id: 4004,
         name: "Taureau machine",
         artist: "Thierry Benenati",
         year: "2018",
@@ -327,7 +327,7 @@ export const SHOP_DATA = [
     routeName: "prints",
     items: [
       {
-        id: 1,
+        id: 5001,
         name: "Femme au Chapeau",
         artist: "Pablo Picasso",
         year: "1962",
@@ -336,7 +336,7 @@ export const SHOP_DATA = [
         price: 135164
       },
       {
-        id: 2,
+        id: 5002,
         name: "Jake & Jill (Police Kids)",
         artist: "Banksy",
         year: "2005",
@@ -345,7 +345,7 @@ export const SHOP_DATA = [
         price: 63606
       },
       {
-        id: 3,
+        id: 5003,
         name: "La Poupée Parisienne",
         artist: "Oskar Rabin",
         year: "1983",
@@ -354,7 +354,7 @@ export const SHOP_DATA = [
         price: 28396
       },
       {
-        id: 4,
+        id: 5004,
         name: "Ray Charles",
         artist: "Aaron",
         year: "2018",
@@ -363,7 +363,7 @@ export const SHOP_DATA = [
         price: 16924
       },
       {
-        id: 5,
+        id: 5005,
         name: "Carmen",
         artist: "Marc Chagall",
         year: "1966",
@@ -372,7 +372,7 @@ export const SHOP_DATA = [
         price: 35000
       },
       {
-        id: 6,
+        id: 5006,
         name: "Paris Lips",
         artist: "Joseph Klibansky",
         year: "2008",
@@ -381,7 +381,7 @@ export const SHOP_DATA = [
         price: 25000
       },
       {
-        id: 7,
+        id: 5007,
         name: "Grazing Along",
         artist: "Joseph Klibansky",
         year: "2008",
@@ -390,7 +390,7 @@ export const SHOP_DATA = [
         price: 24000
       },
       {
-        id: 8,
+        id: 5008,
         name: "Jonas Leriche",
         artist: "",
         year: "2017",

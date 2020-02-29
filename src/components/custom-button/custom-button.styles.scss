@@ -2,7 +2,7 @@
 
 $google-color: #4285f4;
 
-.custom-buton {
+.custom-button {
   min-width: 150px;
   width: auto;
   height: 45px;
@@ -13,7 +13,10 @@ $google-color: #4285f4;
   background-color: $dark;
   color: $light;
   text-transform: uppercase;
+  font-weight: lighter;
   border: none;
+  display: flex;
+  justify-content: center;
 
   &:hover {
     background-color: white;
@@ -28,6 +31,16 @@ $google-color: #4285f4;
     &:hover {
       background-color: darken($google-color, 5%);
       border: none;
+    }
+  }
+
+  &.inverted {
+    background-color: $dark;
+    color: $light;
+
+    &:hover {
+      background-color: $light;
+      color: $dark;
     }
   }
 }
