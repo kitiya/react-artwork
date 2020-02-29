@@ -6,26 +6,27 @@ import { connect } from "react-redux";
 
 import { auth } from "../../firebase/firebase.utils";
 
+import CartIcon from "../cart-icon/cart-icon.component";
+import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { ReactComponent as Logo } from "../../assets/logo/crown.svg";
 import "./header.styles.scss";
 
-const Header = ({ currentUser }) => {
-  // console.log(currentUser);
+const Header = ({ currentUser, hidden }) => {
   return (
     <header className="header">
       <Link className="logo-container" to="/">
         <Logo className="logo" />
       </Link>
       <div className="options">
-        <NavLink className="option" activeClassName="active-link" exact to="/">
+        {/* <NavLink className="option" activeClassName="active-link" exact to="/">
           Home
-        </NavLink>
+        </NavLink> */}
         <NavLink className="option" activeClassName="active-link" to="/shop">
           Shop
         </NavLink>
-        <NavLink className="option" activeClassName="active-link" to="/about">
+        {/* <NavLink className="option" activeClassName="active-link" to="/about">
           About
-        </NavLink>
+        </NavLink> */}
         <NavLink className="option" activeClassName="active-link" to="/contact">
           Contact
         </NavLink>
@@ -42,14 +43,21 @@ const Header = ({ currentUser }) => {
             Sign in
           </NavLink>
         )}
+        <CartIcon />
       </div>
+      {hidden ? null : <CartDropdown />}
     </header>
   );
 };
 
 // this state attribute is a root-reducer
-const mapStateToProps = state => ({
-  currentUser: state.user.currentUser
+// const mapStateToProps = state => ({
+//   currentUser: state.user.currentUser
+// });
+
+const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+  currentUser,
+  hidden
 });
 
 export default connect(mapStateToProps)(Header);
