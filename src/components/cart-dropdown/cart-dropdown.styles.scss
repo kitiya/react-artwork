@@ -3,7 +3,7 @@
 .cart-dropdown {
   position: absolute;
   width: 240px;
-  height: 340px;
+  max-height: 340px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -14,10 +14,14 @@
   z-index: 5;
 
   .cart-items {
-    height: 240px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: hidden;
+
+    &:hover {
+      overflow: auto;
+    }
   }
 
   button {

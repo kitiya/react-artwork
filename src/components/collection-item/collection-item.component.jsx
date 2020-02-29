@@ -3,18 +3,9 @@ import { connect } from "react-redux";
 
 import { addItem } from "../../redux/cart/cart.actions";
 import CustomButton from "../custom-button/custom-button.component";
+import { setLocalCurrencyFormat } from "../../utils/formatter.utils";
 
 import "./collection-item.styles.scss";
-
-const setLocalCurrencyFormat = val => {
-  let formatter = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 0
-  });
-
-  return formatter.format(val);
-};
 
 const CollectionItem = ({ item, addItem }) => {
   const { name, artist, imageUrl, price } = item;

@@ -11,10 +11,11 @@ $google-color: #4285f4;
   font-size: 15px;
   font-family: $serif;
   background-color: $dark;
+  border: 1px solid $dark;
   color: $light;
   text-transform: uppercase;
   font-weight: lighter;
-  border: none;
+
   display: flex;
   justify-content: center;
 
