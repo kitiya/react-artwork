@@ -1,0 +1,38 @@
+@import "../../app";
+
+.checkout-item {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $border-color;
+  padding: 15px 0;
+  font-size: 18px;
+
+  .image-wrapper {
+    width: 23%;
+    padding-right: 20px;
+
+    .background-image {
+      min-width: 150px;
+      height: 150px;
+      background-position: center;
+      background-size: cover;
+      box-shadow: 0px 0px 3px $border-color;
+    }
+  }
+
+  .name,
+  .quantity,
+  .price {
+    width: 23%;
+  }
+  .quantity {
+    padding-left: 20px;
+  }
+
+  .remove-button {
+    padding-left: 12px;
+    cursor: pointer;
+  }
+}
