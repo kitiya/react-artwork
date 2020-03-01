@@ -23,19 +23,20 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
       <span className="name">{name}</span>
       <span className="quantity">
         <i
-          className="arrow fa fa-minus-square-o"
+          className="fa fa-minus-square-o"
           onClick={() => removeItem(cartItem)}
         ></i>
         <span className="quantity-value">{quantity}</span>
         <i
-          className="arrow fa fa-plus-square-o"
+          className="fa fa-plus-square-o"
           onClick={() => addItem(cartItem)}
         ></i>
       </span>
       <span className="price">{setLocalCurrencyFormat(price)}</span>
-      <div className="remove-button" onClick={() => clearItem(cartItem)}>
-        &#10005;
-      </div>
+      <i
+        className="remove-button fa fa-window-close-o"
+        onClick={() => clearItem(cartItem)}
+      ></i>
     </div>
   );
 };
