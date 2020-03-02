@@ -1,25 +1,16 @@
 import React from "react";
+import { Route } from "react-router-dom";
 
-import CollectionPreview from "../../components/collection-preview/collection-preview.component";
 import Hero from "../../components/hero/hero.component";
+import CollectionsOverview from "../../components/collections-overview/collections-overview.component";
+import CollectionPage from "../collection/collection.component";
 
-import { SHOP_DATA } from "./shop.data";
-
-const ShopPage = () => {
-  const collections = SHOP_DATA;
-
-  console.log(collections);
+const ShopPage = ({ match }) => {
   return (
-    <div>
+    <div className="shop-page">
       <Hero className="shop" />
-      {collections.map(collection => (
-        <CollectionPreview
-          key={collection.id}
-          title={collection.title}
-          subtitle={collection.subtitle}
-          items={collection.items}
-        />
-      ))}
+      <Route exact path={`${match.path}`} component={CollectionsOverview} />
+      <Route path={`${match.path}/:collectionId`} component={CollectionPage} />
     </div>
   );
 };

@@ -1,11 +1,10 @@
 @import "../../app";
 
 .collection-item {
-  // width: 22%; //TODO
-  width: 400px;
+  width: 22vw;
   height: 400px;
   margin: 10px auto;
-  padding: 1rem;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;

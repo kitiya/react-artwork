@@ -11,7 +11,7 @@ import CheckoutPage from "./pages/checkout/checkout.component";
 const Routes = ({ currentUser }) => (
   <Switch>
     <Route exact path="/" component={HomePage} />
-    <Route exact path="/shop" component={ShopPage} />
+    <Route path="/shop" component={ShopPage} />
     <Route path="/about" component={AboutPage} />
     <Route path="/contact" component={ContactPage} />
     <Route exact path="/checkout" component={CheckoutPage} />
@@ -22,7 +22,7 @@ const Routes = ({ currentUser }) => (
         currentUser ? <Redirect to="/" /> : <SignInAndSignUpPage />
       }
     />
-    <Route
+    {/* <Route
       component={() => {
         return (
           <h1
@@ -37,7 +37,7 @@ const Routes = ({ currentUser }) => (
           </h1>
         );
       }}
-    />
+    /> */}
   </Switch>
 );
 

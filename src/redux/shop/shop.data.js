@@ -1,17 +1,17 @@
-export const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+  paintings: {
     id: 1,
     title: "Paintings",
     subtitle:
       "KatieArt has a large selection of modern and contemporary canvas paintings for you to discover, organised under our various headers and themes. Painting has been a means of expression for mankind from Prehistoric times to the modern day, making it a true ambassador for the Fine Arts. Even today, it embodies the visual arts par excellence.",
-    routeName: "paintngs",
+    routeName: "paintings",
     items: [
       {
         id: 1001,
         name: "Souffle éternel",
         artist: "Kiko",
         year: "2020",
-        imageUrl: "images/artwork/paintings/souffle-eternel.jpg",
+        imageUrl: "/images/artwork/paintings/souffle-eternel.jpg",
         source: "https://www.artsper.com/",
         price: 2953
       },
@@ -20,7 +20,7 @@ export const SHOP_DATA = [
         name: "Girafe",
         artist: "Martin",
         year: "2017",
-        imageUrl: "images/artwork/paintings/girafe.jpg",
+        imageUrl: "/images/artwork/paintings/girafe.jpg",
         source: "https://www.artsper.com/",
         price: 1808
       },
@@ -29,7 +29,7 @@ export const SHOP_DATA = [
         name: "Robots Fiesta",
         artist: "David Cumps",
         year: "2020",
-        imageUrl: "images/artwork/paintings/robots-fiesta.jpg",
+        imageUrl: "/images/artwork/paintings/robots-fiesta.jpg",
         source: "https://www.artsper.com/",
         price: 3277
       },
@@ -38,7 +38,7 @@ export const SHOP_DATA = [
         name: "L'arbre Amoureux",
         artist: "Alexandra Battezzati",
         year: "2019",
-        imageUrl: "images/artwork/paintings/larbre-amoureux.jpg",
+        imageUrl: "/images/artwork/paintings/larbre-amoureux.jpg",
         source: "https://www.artsper.com/",
         price: 4407
       },
@@ -47,7 +47,7 @@ export const SHOP_DATA = [
         name: "Identité Huile XL",
         artist: "Caroline Vis",
         year: "2020",
-        imageUrl: "images/artwork/paintings/identite-huile-xl.jpg",
+        imageUrl: "/images/artwork/paintings/identite-huile-xl.jpg",
         source: "https://www.artsper.com/",
         price: 2712
       },
@@ -56,7 +56,7 @@ export const SHOP_DATA = [
         name: "Roule ma poule",
         artist: "Patricia Simsa",
         year: "2020",
-        imageUrl: "images/artwork/paintings/roule-ma-poule.jpg",
+        imageUrl: "/images/artwork/paintings/roule-ma-poule.jpg",
         source: "https://www.artsper.com/",
         price: 1695
       },
@@ -65,7 +65,7 @@ export const SHOP_DATA = [
         name: "Elephants",
         artist: "Rafal Gadowski",
         year: "2020",
-        imageUrl: "images/artwork/paintings/elephants.jpg",
+        imageUrl: "/images/artwork/paintings/elephants.jpg",
         source: "https://www.artsper.com/",
         price: 1582
       },
@@ -74,7 +74,7 @@ export const SHOP_DATA = [
         name: "Tan Tan Bo Silkscreen",
         artist: "Takashi Murakami",
         year: "2016",
-        imageUrl: "images/artwork/paintings/tan-tan-bo.jpg",
+        imageUrl: "/images/artwork/paintings/tan-tan-bo.jpg",
         source: "https://www.artsper.com/",
         price: 26315
       },
@@ -83,7 +83,7 @@ export const SHOP_DATA = [
         name: "Universal Religion Chapter 6",
         artist: "Joseph Klibansky",
         year: "2012",
-        imageUrl: "images/artwork/paintings/universal-religion.jpg",
+        imageUrl: "/images/artwork/paintings/universal-religion.jpg",
         source: "https://www.artsper.com/",
         price: 24850
       },
@@ -92,7 +92,7 @@ export const SHOP_DATA = [
         name: "La Fosse",
         artist: "Michaël Brack",
         year: "2019",
-        imageUrl: "images/artwork/paintings/la-fosse.jpg",
+        imageUrl: "/images/artwork/paintings/la-fosse.jpg",
         source: "https://www.artsper.com/",
         price: 904
       },
@@ -101,7 +101,7 @@ export const SHOP_DATA = [
         name: "L'Arbre sous les étoiles",
         artist: "Alexandra Battezzati",
         year: "2018",
-        imageUrl: "images/artwork/paintings/larbre-sous-les-etoiles.jpg",
+        imageUrl: "/images/artwork/paintings/larbre-sous-les-etoiles.jpg",
         source: "https://www.artsper.com/",
         price: 6214
       },
@@ -110,16 +110,17 @@ export const SHOP_DATA = [
         name: "Dancing flower",
         artist: "Polar Bear",
         year: "2019",
-        imageUrl: "images/artwork/paintings/dancing-flower.jpg",
+        imageUrl: "/images/artwork/paintings/dancing-flower.jpg",
         source: "https://www.artsper.com/",
         price: 678
       }
     ]
   },
-  {
+  photography: {
     id: 2,
     title: "Photography",
-    subtitle: "",
+    subtitle:
+      "With over one million limited edition and open edition prints to choose from, KatieArt offers high quality photography perfectly suited for your space.",
     routeName: "photography",
     items: [
       {
@@ -127,7 +128,7 @@ export const SHOP_DATA = [
         name: "S'amouracher",
         artist: "Léa Helft",
         year: "2019",
-        imageUrl: "images/artwork/photography/samouracher.jpg",
+        imageUrl: "/images/artwork/photography/samouracher.jpg",
         source: "https://www.artsper.com/",
         price: 1022
       },
@@ -136,7 +137,7 @@ export const SHOP_DATA = [
         name: "girls-in-the-window",
         artist: "Ormond Gigli",
         year: "1960",
-        imageUrl: "images/artwork/photography/girls-in-the-window.jpg",
+        imageUrl: "/images/artwork/photography/girls-in-the-window.jpg",
         source: "https://www.artsper.com/",
         price: 28000
       },
@@ -145,7 +146,7 @@ export const SHOP_DATA = [
         name: "Tahiti",
         artist: "Seth",
         year: "2015",
-        imageUrl: "images/artwork/photography/tahiti.jpg",
+        imageUrl: "/images/artwork/photography/tahiti.jpg",
         source: "https://www.artsper.com/",
         price: 1590
       },
@@ -154,7 +155,7 @@ export const SHOP_DATA = [
         name: "Louis Vuitton",
         artist: "Giuliano Bekor",
         year: "2018",
-        imageUrl: "images/artwork/photography/louis-vuitton.jpg",
+        imageUrl: "/images/artwork/photography/louis-vuitton.jpg",
         source: "https://www.artsper.com/",
         price: 23000
       },
@@ -163,7 +164,7 @@ export const SHOP_DATA = [
         name: "Full Green",
         artist: "Phil Skolle",
         year: "2014",
-        imageUrl: "images/artwork/photography/full-green.jpg",
+        imageUrl: "/images/artwork/photography/full-green.jpg",
         source: "https://www.artsper.com/",
         price: 1363
       },
@@ -172,7 +173,7 @@ export const SHOP_DATA = [
         name: "Laetitia Casta",
         artist: "Ange Leccia",
         year: "2006",
-        imageUrl: "images/artwork/photography/laetitia-casta.jpg",
+        imageUrl: "/images/artwork/photography/laetitia-casta.jpg",
         source: "https://www.artsper.com/",
         price: 27260
       },
@@ -181,7 +182,7 @@ export const SHOP_DATA = [
         name: "De Money (Rope)",
         artist: "George Osodi",
         year: "2009",
-        imageUrl: "images/artwork/photography/de-money-rope.jpg",
+        imageUrl: "/images/artwork/photography/de-money-rope.jpg",
         source: "https://www.artsper.com/",
         price: 21537
       },
@@ -190,7 +191,7 @@ export const SHOP_DATA = [
         name: "Holy Day (Italy - Tuscany)",
         artist: "Antoine Rose",
         year: "2017",
-        imageUrl: "images/artwork/photography/holy-day-italy-tuscany.jpg",
+        imageUrl: "/images/artwork/photography/holy-day-italy-tuscany.jpg",
         source: "https://www.artsper.com/",
         price: 20445
       },
@@ -199,7 +200,7 @@ export const SHOP_DATA = [
         name: "Marilyn Pink Roses",
         artist: "Bert Stern",
         year: "2011",
-        imageUrl: "images/artwork/photography/marilyn-pink-roses.jpg",
+        imageUrl: "/images/artwork/photography/marilyn-pink-roses.jpg",
         source: "https://www.artsper.com/",
         price: 31803
       },
@@ -208,7 +209,7 @@ export const SHOP_DATA = [
         name: "Mexican Wrestling Masks",
         artist: "Liu Bolin",
         year: "2015",
-        imageUrl: "images/artwork/photography/mexican-wrestling-masks.jpg",
+        imageUrl: "/images/artwork/photography/mexican-wrestling-masks.jpg",
         source: "https://www.artsper.com/",
         price: 21380
       },
@@ -217,7 +218,7 @@ export const SHOP_DATA = [
         name: "Vertical horizon",
         artist: "Ralph Gibson",
         year: "2016",
-        imageUrl: "images/artwork/photography/vertical-horizon.jpg",
+        imageUrl: "/images/artwork/photography/vertical-horizon.jpg",
         source: "https://www.artsper.com/",
         price: 17037
       },
@@ -226,16 +227,17 @@ export const SHOP_DATA = [
         name: "Bubbles in Bubbles",
         artist: "Ellen von Unwerth",
         year: "2012",
-        imageUrl: "images/artwork/photography/bubbles-in-bubbles.jpg",
+        imageUrl: "/images/artwork/photography/bubbles-in-bubbles.jpg",
         source: "https://www.artsper.com/",
         price: 17075
       }
     ]
   },
-  {
+  drawings: {
     id: 3,
     title: "Drawings",
-    subtitle: "",
+    subtitle:
+      "Choose from a wide-ranging selection of over 250,000 original drawings and prints ranging in subject, style and media from figurative to abstract, monochromatic to multicoloured, and charcoal to pencil.",
     routeName: "drawings",
     items: [
       {
@@ -243,7 +245,7 @@ export const SHOP_DATA = [
         name: "Les vaches",
         artist: "Jean Dubuffet",
         year: "1954",
-        imageUrl: "images/artwork/drawings/les-vaches.jpg",
+        imageUrl: "/images/artwork/drawings/les-vaches.jpg",
         source: "https://www.artsper.com/",
         price: 51112
       },
@@ -252,7 +254,7 @@ export const SHOP_DATA = [
         name: "Six Geishas",
         artist: "Walasse Ting",
         year: "1981",
-        imageUrl: "images/artwork/drawings/six-geishas.jpg",
+        imageUrl: "/images/artwork/drawings/six-geishas.jpg",
         source: "https://www.artsper.com/",
         price: 30000
       },
@@ -261,7 +263,7 @@ export const SHOP_DATA = [
         name: "Grande vanité aux papillons",
         artist: "Philippe Pasqua",
         year: "2010",
-        imageUrl: "images/artwork/drawings/grande-vanite-aux-papillons.jpg",
+        imageUrl: "/images/artwork/drawings/grande-vanite-aux-papillons.jpg",
         source: "https://www.artsper.com/",
         price: 28282
       },
@@ -270,16 +272,17 @@ export const SHOP_DATA = [
         name: "Polen de anillos amarillos",
         artist: "Los Carpinteros",
         year: "2017",
-        imageUrl: "images/artwork/drawings/polen-de-anillos-amarillos.jpg",
+        imageUrl: "/images/artwork/drawings/polen-de-anillos-amarillos.jpg",
         source: "https://www.artsper.com/",
         price: 26000
       }
     ]
   },
-  {
+  sculpture: {
     id: 4,
     title: "Sculpture",
-    subtitle: "",
+    subtitle:
+      "Browse our wide-ranging selection of over 100,000 original sculptures by artists working in a variety of mediums. Suitable for both the interior home and outdoor spaces, sculptures anchor a space and are available in numerous textures and colors.",
     routeName: "sculpture",
     items: [
       {
@@ -287,7 +290,7 @@ export const SHOP_DATA = [
         name: "Love",
         artist: "Kongo",
         year: "2019",
-        imageUrl: "images/artwork/sculpture/love.jpg",
+        imageUrl: "/images/artwork/sculpture/love.jpg",
         source: "https://www.artsper.com/",
         price: 136300
       },
@@ -296,7 +299,7 @@ export const SHOP_DATA = [
         name: "Juliet - Lifesize",
         artist: "Tom Merrifield",
         year: "2013",
-        imageUrl: "images/artwork/sculpture/juliet-lifesize.jpg",
+        imageUrl: "/images/artwork/sculpture/juliet-lifesize.jpg",
         source: "https://www.artsper.com/",
         price: 130000
       },
@@ -305,7 +308,7 @@ export const SHOP_DATA = [
         name: "Olivier",
         artist: "Philippe Pasqua",
         year: "2016",
-        imageUrl: "images/artwork/sculpture/olivier.jpg",
+        imageUrl: "/images/artwork/sculpture/olivier.jpg",
         source: "https://www.artsper.com/",
         price: 121150
       },
@@ -314,16 +317,17 @@ export const SHOP_DATA = [
         name: "Taureau machine",
         artist: "Thierry Benenati",
         year: "2018",
-        imageUrl: "images/artwork/sculpture/taureau-machine.jpg",
+        imageUrl: "/images/artwork/sculpture/taureau-machine.jpg",
         source: "https://www.artsper.com/",
         price: 62471
       }
     ]
   },
-  {
+  prints: {
     id: 5,
     title: "Prints",
-    subtitle: "",
+    subtitle:
+      "KatieArt offers more than 1.2 millions high quality open edition prints suitable for any occasion. Our prints are available in a variety of sizes and frame selections so that you can customize to suit your room.",
     routeName: "prints",
     items: [
       {
@@ -331,7 +335,7 @@ export const SHOP_DATA = [
         name: "Femme au Chapeau",
         artist: "Pablo Picasso",
         year: "1962",
-        imageUrl: "images/artwork/print/femme-au-chapeau.jpg",
+        imageUrl: "/images/artwork/print/femme-au-chapeau.jpg",
         source: "https://www.artsper.com/",
         price: 135164
       },
@@ -340,7 +344,7 @@ export const SHOP_DATA = [
         name: "Jake & Jill (Police Kids)",
         artist: "Banksy",
         year: "2005",
-        imageUrl: "images/artwork/print/jake-jill-police-kids.jpg",
+        imageUrl: "/images/artwork/print/jake-jill-police-kids.jpg",
         source: "https://www.artsper.com/",
         price: 63606
       },
@@ -349,7 +353,7 @@ export const SHOP_DATA = [
         name: "La Poupée Parisienne",
         artist: "Oskar Rabin",
         year: "1983",
-        imageUrl: "images/artwork/print/la-poupee-parisienne.jpg",
+        imageUrl: "/images/artwork/print/la-poupee-parisienne.jpg",
         source: "https://www.artsper.com/",
         price: 28396
       },
@@ -358,7 +362,7 @@ export const SHOP_DATA = [
         name: "Ray Charles",
         artist: "Aaron",
         year: "2018",
-        imageUrl: "images/artwork/print/ray-charles.jpg",
+        imageUrl: "/images/artwork/print/ray-charles.jpg",
         source: "https://www.artsper.com/",
         price: 16924
       },
@@ -367,7 +371,7 @@ export const SHOP_DATA = [
         name: "Carmen",
         artist: "Marc Chagall",
         year: "1966",
-        imageUrl: "images/artwork/print/carmen.jpg",
+        imageUrl: "/images/artwork/print/carmen.jpg",
         source: "https://www.artsper.com/",
         price: 35000
       },
@@ -376,7 +380,7 @@ export const SHOP_DATA = [
         name: "Paris Lips",
         artist: "Joseph Klibansky",
         year: "2008",
-        imageUrl: "images/artwork/print/paris-lips.jpg",
+        imageUrl: "/images/artwork/print/paris-lips.jpg",
         source: "https://www.artsper.com/",
         price: 25000
       },
@@ -385,7 +389,7 @@ export const SHOP_DATA = [
         name: "Grazing Along",
         artist: "Joseph Klibansky",
         year: "2008",
-        imageUrl: "images/artwork/print/grazing-along.jpg",
+        imageUrl: "/images/artwork/print/grazing-along.jpg",
         source: "https://www.artsper.com/",
         price: 24000
       },
@@ -394,10 +398,12 @@ export const SHOP_DATA = [
         name: "Jonas Leriche",
         artist: "",
         year: "2017",
-        imageUrl: "images/artwork/print/la-renaissance.jpg",
+        imageUrl: "/images/artwork/print/la-renaissance.jpg",
         source: "https://www.artsper.com/",
         price: 17037
       }
     ]
   }
-];
+};
+
+export default SHOP_DATA;
