@@ -30,10 +30,19 @@
     margin-top: 20px;
     font-size: 24px;
 
-    span {
+    .total {
       display: block;
-      margin-left: auto;
+      margin: 20px auto;
       text-align: right;
+    }
+
+    .stripe {
+      text-align: center;
+
+      .test-warning {
+        color: crimson;
+        margin-bottom: 30px;
+      }
     }
   }
 }
