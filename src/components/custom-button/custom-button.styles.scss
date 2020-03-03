@@ -28,10 +28,11 @@ $google-color: #4285f4;
   &.google-sign-in {
     background-color: $google-color;
     color: white;
+    border: 1px solid $google-color;
 
     &:hover {
-      background-color: darken($google-color, 5%);
-      border: none;
+      background-color: white;
+      color: $google-color;
     }
   }
 

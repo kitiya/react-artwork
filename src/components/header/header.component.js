@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
 
 // The connect() function connects a React component to a Redux store.
 import { connect } from "react-redux";
@@ -14,42 +13,39 @@ import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { ReactComponent as Logo } from "../../assets/logo/crown.svg";
 import "./header.styles.scss";
 
+import {
+  HeaderContainer,
+  LogoContainer,
+  OptionsContainer,
+  OptionLink
+} from "./header.styles";
+
 const Header = ({ currentUser, hidden }) => {
   return (
-    <header className="header">
-      <Link className="logo-container" to="/">
+    <HeaderContainer>
+      <LogoContainer to="/">
         <Logo className="logo" />
-      </Link>
-      <div className="options">
-        {/* <NavLink className="option" activeClassName="active-link" exact to="/">
-          Home
-        </NavLink> */}
-        <NavLink className="option" activeClassName="active-link" to="/shop">
+      </LogoContainer>
+      <OptionsContainer>
+        <OptionLink activeClassName="active-link" to="/shop">
           Shop
-        </NavLink>
-        {/* <NavLink className="option" activeClassName="active-link" to="/about">
-          About
-        </NavLink> */}
-        <NavLink className="option" activeClassName="active-link" to="/contact">
+        </OptionLink>
+        <OptionLink activeClassName="active-link" to="/contact">
           Contact
-        </NavLink>
+        </OptionLink>
         {currentUser ? (
-          <div className="option" onClick={() => auth.signOut()}>
+          <OptionLink as="div" onClick={() => auth.signOut()}>
             Sign out
-          </div>
+          </OptionLink>
         ) : (
-          <NavLink
-            className="option"
-            activeClassName="active-link"
-            to="/sign-in"
-          >
+          <OptionLink activeClassName="active-link" to="/sign-in">
             Sign in
-          </NavLink>
+          </OptionLink>
         )}
         <CartIcon />
-      </div>
+      </OptionsContainer>
       {hidden ? null : <CartDropdown />}
-    </header>
+    </HeaderContainer>
   );
 };
 
